@@ -1,38 +1,163 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(48, 16, 255, 1) 0%,
+    rgba(100, 115, 255, 1) 100%
+  );
+}
+
+
+ul {
+margin: auto;
+padding-bottom: 20px;
+width: 60%;
+background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.student-header {
+  font-size: 20pt;
+  margin: auto;
+  
+}
+
+.item-list {
+  margin: 4px auto;
+  list-style-type: none;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgb(26, 26, 26) 0%,
+    rgb(63, 63, 63) 100%
+  );
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.item-list:nth-child(2n+1) {
+  background: linear-gradient(
+    90deg,
+    rgb(66, 66, 66) 0%,
+    rgb(94, 94, 94) 100%
+  );
+}
+
+
+.item-name {
+  font-size: 34px;
+  color: #ffffff;
+}
+
+.item-desc {
+  font-size: 12px;
+}
+
+h1 {
+margin-top: 32px;
+color: #fff;
+font-size: 44px;
+text-align: center;
+}
+
+h2 {
+  margin-bottom: 32px;
+  color: #fff;
+  font-size: 18px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topnav {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+overflow: hidden;
+margin: 0 auto;
+width: 60%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.navlink {
+  display: flex; 
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.topnav a {
+float: left;
+color: #f2f2f2;
+background-color:  rgb(94, 94, 94);
+border: rgb(0, 0, 0);
+border-style: solid;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.topnav a:hover {
+background-color: rgb(53, 53, 53);
+color: rgb(255, 255, 255);
 }
+
+.topnav a.active {
+background-color: rgb(26, 26, 26);
+color: rgb(255, 255, 255);
+}
+
+
+.boxes-container {
+  background: linear-gradient(
+    90deg,
+    rgb(26, 26, 26) 0%,
+    rgb(63, 63, 63) 100%
+  );
+  display: flex;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  padding: 15px;
+  width: 60%;
+}
+
+.box-name {
+  margin: auto;
+  padding: auto;
+}
+
+.box-desc {
+margin: auto;
+padding: auto;
+}
+
+.box-text {
+font-size: 20px;
+color: white;
+text-align: center;
+}
+
+input {
+  margin: 20px;
+  text-align: left;
+  border: solid rgb(26, 26, 26);
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+}
+
+
+
