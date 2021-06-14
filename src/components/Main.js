@@ -8,7 +8,7 @@ class Main extends React.Component {
         StudentsList: [ "Maciej Tylak/Lubię programować i wgl", "Adam Nowak/Nie mam pojęcia co robię", "Anna Kowalska/5 lat doświadczenia jako senior c++ developer, 10 lat doświadczenia jako fullstack PHP developer, dobrze pracuję w zespole, jestem otwartą i pozytywną osobą." ],
     }
 
-    adder = (newDescriptionText, newItemText) => {
+    initList = (newDescriptionText, newItemText) => {
         this.setState({
                 StudentsList: this.state.StudentsList.concat(newItemText + "/" + 
                 newDescriptionText)
@@ -23,10 +23,10 @@ class Main extends React.Component {
               <section><StudentsList StudentsList={this.state.StudentsList}/></section>
             </Route>
             <Route path="/new">
-              <section><New adder={this.adder}/></section>
+              <section><New initList={this.initList}/></section>
             </Route>
             <Route>
-              <section><h1>Error 404 - not found</h1></section>
+              <section><h1>Error 404</h1></section>
             </Route>
           </Switch>
         );

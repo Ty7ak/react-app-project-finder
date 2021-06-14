@@ -7,8 +7,6 @@ class New extends React.Component {
         newDescriptionText: ""
     }
 
-    errorText = "This value is incorrect"
-
     handleInputNameChange = (event) => {
         this.setState({
             newItemText: event.target.value
@@ -39,16 +37,16 @@ class New extends React.Component {
                     <div className = "name-text">
                         <span className = "box-text">Name:</span>
                         <Box
-                            text = {this.state.newItemText}
-                            onChange ={this.handleInputNameChange}
+                            text = {this.state.newDescriptionText}
+                            onChange ={this.handleInputDescriptionChange}
                             onKeyDown = {this.handleKey}
                         />
                     </div>
                     <div className = "box-desc">
                         <span className = "box-text">Description:</span>
                         <Box
-                            text = {this.state.newDescriptionText}
-                            onChange ={this.handleInputDescriptionChange}
+                            text = {this.state.newItemText}
+                            onChange ={this.handleInputNameChange}
                             onKeyDown = {this.handleKey}
                         />
                     </div>
