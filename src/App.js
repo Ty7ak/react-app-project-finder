@@ -11,7 +11,7 @@ function App() {
     <main>
 
       <div class="topnav">
-          <NavLink to="/list" exact>List</NavLink>
+          <NavLink to="/" exact>List</NavLink>
           <NavLink to="/new">New</NavLink>
       </div>
       <Main />
